@@ -1,0 +1,132 @@
+body {
+  margin: 0;
+  padding: 0;
+  background: linear-gradient(rgb(216, 243, 255), rgb(255, 125, 238));
+}
+@keyframes opacityIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes slideIn {
+  from {
+    margin-top: -500;
+  }
+  to {
+    margin-top: 0;
+  }
+}
+
+@keyframes opacityOut {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: -500;
+  }
+}
+
+.added {
+  display: block;
+}
+
+#logo {
+  font-size: 100px;
+  animation: slideIn 1s;
+}
+
+#start {
+  font-size: 50px;
+  animation: opacityIn 1s;
+  animation-delay: 1.5s;
+  opacity: 0;
+  animation-fill-mode: both;
+}
+
+.buttons1 {
+  text-align: center;
+  font-size: 30;
+  width: 100;
+  border-width: 3;
+}
+
+#playagain {
+  text-align: center;
+  font-size: 30;
+  width: 498;
+  height: 150;
+  border-width: 3;
+  margin-left: 710;
+}
+
+#buttonsDiv {
+  text-align: center;
+  position: relative;
+  margin: 0;
+}
+
+#chooseSymbol {
+  color: red;
+  font-weight: bold;
+  display: none;
+}
+
+h1,
+h2,
+h3,
+p {
+  text-align: center;
+  font-family: "Trebuchet MS";
+}
+
+#gameFields {
+  text-align: center;
+  height: 498;
+  width: 498;
+  position: relative;
+  align-items: center;
+  margin: auto;
+}
+.gameField,
+.gameFieldChoosen {
+  background-color: rgb(255, 255, 255);
+  position: absolute;
+  text-align: center;
+  text-size-adjust: 10;
+  height: 166;
+  width: 166;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  font-size: 70;
+  border-width: 5px;
+  text-shadow: 1px 1px 1px black;
+}
+
+.gameField:hover {
+  border-width: 10;
+  background-color: rgb(204, 204, 204);
+  transition: 0.2s;
+}
+
+table {
+  display: inline-block;
+}
+
+input[disabled] {
+  background-color: white;
+  color: black;
+  border-width: 20px;
+  border-color: rgb(240, 240, 240);
+}
+
+#win {
+  position: absolute;
+  bottom: 385;
+  margin-left: 740;
+  font-family: "Trebuchet MS";
+  font-size: 100px;
+  text-shadow: 3px 3px 3px black;
+}

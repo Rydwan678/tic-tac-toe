@@ -1,0 +1,32 @@
+<html>
+  <head>
+    <link href="styles.css" rel="stylesheet" />
+  </head>
+  <body>
+    
+    <h1 id="logo">KÓŁKO I KRZYŻYK</h1>
+    
+    <div  id="gameFields">
+          <input  style="top: 0; left: 0"  class="gameField" onclick=playerMove(0) type="button" id="field0"></input>
+          <input  style="top: 0; left: 166"  class="gameField" onclick=playerMove(1) type="button" id="field1"></input>
+          <input  style="top: 0; left: 332"  class="gameField" onclick=playerMove(2) type="button" id="field2"></input>
+          <input  style="top: 166; left: 0"  class="gameField" onclick=playerMove(3) type="button" id="field3"></input>
+          <input  style="top: 166; left: 166"  class="gameField" onclick=playerMove(4) type="button" id="field4"></input>
+          <input  style="top: 166; left: 332"  class="gameField" onclick=playerMove(5) type="button" id="field5"></input><br>
+          <input  style="top: 332; left: 0"  class="gameField" onclick=playerMove(6) type="button" id="field6"></input>
+          <input  style="top: 332; left: 166"  class="gameField" onclick=playerMove(7) type="button" id="field7"></input>
+          <input  style="top: 332; left: 332"  class="gameField" onclick=playerMove(8) type="button" id="field8"></input>
+    </div>
+    <button id="playAgain" style="display: none" onclick="window.location.href='chooseEnemySite.html'">Zagraj ponownie</button>
+    <p id="win" style="display: none"></p>
+    <script src="code.js"></script>
+  </body>
+</html>
+
+
+
+
+
+
+
+
